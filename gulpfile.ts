@@ -130,7 +130,8 @@ const BABEL_CONFIG_MAP = {
                 {
                     loose: false
                 }
-            ]
+            ],
+            ["@babel/plugin-proposal-decorators", { "legacy": true }],
         ]
     }
 }
