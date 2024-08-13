@@ -34,4 +34,5 @@ pub "react"
 pub "svg"
 pub "vue"
 pub "vue-next"
+pub "compiler"
 

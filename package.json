@@ -1,7 +1,11 @@
 {
-    "name": "IconLink",
+    "name": "iconlink",
     "private": true,
     "version": "0.0.0",
+    "workspaces": [
+        "packages/*",
+        "docs"
+    ],
     "scripts": {
         "fmt": "prettier --write ./**/*.ts ./packages",
         "clean": "bash scripts/clean.sh",

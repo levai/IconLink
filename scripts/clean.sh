@@ -30,3 +30,6 @@ rm -rf packages/vue-next/es
 rm -rf packages/vue-next/lib
 rm -rf packages/vue-next/styles
 rm -rf packages/vue-next/icons.json
+
+rm -rf packages/compiler/es
+rm -rf packages/compiler/lib

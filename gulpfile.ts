@@ -13,12 +13,14 @@ import configVue from './packages/vue/tsconfig.json'
 import configVueNext from './packages/vue-next/tsconfig.json'
 import configSVG from './packages/svg/tsconfig.json'
 import configReact from './packages/react/tsconfig.json'
+import configCompiler from './packages/compiler/tsconfig.json'
 
 const TS_CONFIG_MAP = {
     react: configReact,
     vue: configVue,
     svg: configSVG,
-    'vue-next': configVueNext
+    'vue-next': configVueNext,
+    compiler: configCompiler
 }
 
 const BABEL_CONFIG_MAP = {
@@ -109,11 +111,32 @@ const BABEL_CONFIG_MAP = {
                 }
             ]
         ]
+    },
+    compiler: {
+        presets: [
+            [
+                '@babel/preset-env',
+                {
+                    modules: false,
+                    targets: {
+                        browsers: ['> 1%', 'last 2 versions', 'not ie <= 8']
+                    }
+                }
+            ]
+        ],
+        plugins: [
+            [
+                '@babel/plugin-proposal-class-properties',
+                {
+                    loose: false
+                }
+            ]
+        ]
     }
 }
 
 // @ts-ignore
-function createBuildTask(name: 'react' | 'vue' | 'svg' | 'vue-next'): string {
+function createBuildTask(name: 'react' | 'vue' | 'svg' | 'vue-next' | 'compiler'): string {
     const cwd = path.resolve(process.cwd(), 'packages/', name)
 
     gulp.task('build-script-' + name, () => {
@@ -142,7 +165,7 @@ function createBuildTask(name: 'react' | 'vue' | 'svg' | 'vue-next'): string {
 
     const tasks = ['build-script-' + name]
 
-    if (name !== 'svg') {
+    if ((name !== 'svg') | (name !== 'compiler')) {
         gulp.task('build-css-' + name, () => {
             return gulp
                 .src('src/runtime/index.less', { cwd, allowEmpty: true })
@@ -169,5 +192,6 @@ gulp.task(
         createBuildTask('vue'),
         createBuildTask('svg'),
         createBuildTask('vue-next'),
+        createBuildTask('compiler'),
     )
 )
