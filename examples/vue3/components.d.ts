@@ -9,6 +9,6 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    IconACane: typeof import('@icon-space/vue-next')['ACane']
+    IconACane: typeof import('@icon-link/vue-next')['ACane']
   }
 }

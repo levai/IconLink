@@ -1,7 +1,7 @@
 {
-    "name": "@icon-space/vue",
+    "name": "@icon-link/vue",
     "version": "1.0.8-alpha.0",
-    "description": "Vue Icons for IconSpace",
+    "description": "Vue Icons for IconLink",
     "main": "lib/index.js",
     "module": "es/index.js",
     "typings": "lib/index.d.ts",
@@ -9,7 +9,7 @@
         "vue",
         "icon",
         "icon space",
-        "IconSpace",
+        "IconLink",
         "svg",
         "system icons",
         "component",
@@ -25,13 +25,13 @@
         "LICENSE",
         "package.json"
     ],
-    "homepage": "https://github.com/icon-space/IconSpace/packages/vue",
+    "homepage": "https://github.com/icon-space/IconLink/packages/vue",
     "bugs": {
-        "url": "https://github.com/icon-space/IconSpace/issues"
+        "url": "https://github.com/icon-space/IconLink/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/icon-space/IconSpace"
+        "url": "https://github.com/icon-space/IconLink"
     },
     "license": "Apache-2.0",
     "engines": {

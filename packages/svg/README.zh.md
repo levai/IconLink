@@ -1,6 +1,6 @@
-# IconSpace Icons
+# IconLink Icons
 
-> Pure SVG Icons for IconSpace
+> Pure SVG Icons for IconLink
 
 ## 介绍
 
@@ -15,7 +15,7 @@
 
 ### 更多图标
 
-请访问[IconSpace](https://icon-space.github.io/doc/), 提供更多便捷的操作：
+请访问[IconLink](https://github.com/levai/IconLink), 提供更多便捷的操作：
 
 -   复制 SVG 源文件
 -   复制 React 图标组件
@@ -28,15 +28,15 @@
 ### 安装
 
 ```
-npm install @icon-space/svg --save
+npm install @icon-link/svg --save
 ```
 
 ### 引用图标
 
-引用`@icon-space/svg`，并渲染函数对应的图标:
+引用`@icon-link/svg`，并渲染函数对应的图标:
 
 ```
-import {Home} from '@icon-space/svg';
+import {Home} from '@icon-link/svg';
 
 // examples
 
@@ -47,10 +47,10 @@ console.log(svg);
 
 ### 全局
 
-你可以使用 `@icon-space/svg` 中的 `setConfig`方法来设置全局配置。
+你可以使用 `@icon-link/svg` 中的 `setConfig`方法来设置全局配置。
 
 ```typescript
-import { setConfig } from '@icon-space/svg'
+import { setConfig } from '@icon-link/svg'
 
 setConfig({
     theme: 'outline',
@@ -77,7 +77,7 @@ setConfig({
         [
             "import",
             {
-                "libraryName": "@icon-space/svg",
+                "libraryName": "@icon-link/svg",
                 "libraryDirectory": "es/icons",
                 "camel2DashComponentName": false
             }
@@ -86,7 +86,7 @@ setConfig({
 }
 ```
 
-### 将 IconSpace 嵌入到你的项目中
+### 将 IconLink 嵌入到你的项目中
 
 如果你的项目中需要使用到图标名称，作者，分类，标签以及创建时间等额外的信息，你可以使用位于每个 NPM 根目录的`icons.json`文件。
 

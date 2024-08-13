@@ -1,5 +1,5 @@
-import { CheckTwo, CloseTwo, Programmer } from "@icon-space/react";
-import { IconProvider } from "@icon-space/react";
+import { CheckTwo, CloseTwo, Programmer } from "@icon-link/react";
+import { IconProvider } from "@icon-link/react";
 
 function App() {
 

@@ -1,6 +1,6 @@
 {
-    "name": "@icon-space/svg",
-    "description": "Pure Svg Icons for IconSpace",
+    "name": "@icon-link/svg",
+    "description": "Pure Svg Icons for IconLink",
     "version": "1.0.8-alpha.0",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -8,7 +8,7 @@
     "keywords": [
         "icon",
         "icon space",
-        "IconSpace",
+        "IconLink",
         "svg",
         "system icons",
         "component",
@@ -24,13 +24,13 @@
         "LICENSE",
         "package.json"
     ],
-    "homepage": "https://github.com/icon-space/IconSpace/packages/svg",
+    "homepage": "https://github.com/icon-space/IconLink/packages/svg",
     "bugs": {
-        "url": "https://github.com/icon-space/IconSpace/issues"
+        "url": "https://github.com/icon-space/IconLink/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/icon-space/IconSpace"
+        "url": "https://github.com/icon-space/IconLink"
     },
     "license": "Apache-2.0",
     "engines": {

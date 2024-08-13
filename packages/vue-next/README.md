@@ -1,6 +1,6 @@
-# IconSpace Icons
+# IconLink Icons
 
-> Vue3 Icons for IconSpace
+> Vue3 Icons for IconLink
 
 ## Introduction
 
@@ -15,7 +15,7 @@
 
 ### More
 
-Please visit [IconSpace](https://icon-space.github.io/doc/)
+Please visit [IconLink](https://icon-space.github.io/doc/)
 
 -   Copy SVG
 -   Copy React Icon component
@@ -28,19 +28,19 @@ Please visit [IconSpace](https://icon-space.github.io/doc/)
 ### Install
 
 ```
-npm install @icon-space/vue-next --save
+npm install @icon-link/vue-next --save
 ```
 
 ### Include Component
 
-Import an icon from `@icon-space/vue-next`at the top of a component and then use it in the template tag:
+Import an icon from `@icon-link/vue-next`at the top of a component and then use it in the template tag:
 
 ```vue
 <template>
     <home theme="filled" />
 </template>
 <script>
-import { Home } from '@icon-space/vue-next'
+import { Home } from '@icon-link/vue-next'
 
 export default {
     components: {
@@ -53,7 +53,7 @@ export default {
 If you don't want to refer to it, you can install icons globally.
 
 ```typescript
-import { install } from '@icon-space/vue-next/es/all'
+import { install } from '@icon-link/vue-next/es/all'
 import { createApp } from 'vue'
 
 const app = createApp({})
@@ -70,12 +70,12 @@ app.mount('#app')
 Import the icon style:
 
 ```typescript
-import '@icon-space/vue-next/styles/index.css'
+import '@icon-link/vue-next/styles/index.css'
 ```
 
 ### Global Config
 
-You can use `IconProvider` in `@icon-space/vue-next` to set the default config globally:
+You can use `IconProvider` in `@icon-link/vue-next` to set the default config globally:
 
 ```html
 <template>
@@ -84,8 +84,8 @@ You can use `IconProvider` in `@icon-space/vue-next` to set the default config g
     </div>
 </template>
 <script lang="ts">
-    import { DEFAULT_ICON_CONFIGS, IconProvider } from '@icon-space/vue-next'
-    import { Home } from '@icon-space/vue-next'
+    import { DEFAULT_ICON_CONFIGS, IconProvider } from '@icon-link/vue-next'
+    import { Home } from '@icon-link/vue-next'
 
     export default {
         name: 'App',
@@ -111,7 +111,7 @@ Set config like this:
         [
             "import",
             {
-                "libraryName": "@icon-space/vue-next",
+                "libraryName": "@icon-link/vue-next",
                 "libraryDirectory": "es/icons",
                 "camel2DashComponentName": false
             }
@@ -133,17 +133,17 @@ Usage:
     <icon-space type="add-text" theme="filled" />
 </template>
 <script>
-import { IconSpace } from '@icon-space/vue-next/es/all'
+import { IconLink } from '@icon-link/vue-next/es/all'
 
 export default {
     components: {
-        IconSpace
+        IconLink
     }
 }
 </script>
 ```
 
-### Embed IconSpace in your project
+### Embed IconLink in your project
 
 If you need to use additional information such as icon name, author, category, label and creation time, you can use the `icons.json` file located in the root directory of each NPM.
 

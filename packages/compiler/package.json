@@ -1,5 +1,5 @@
 {
-    "name": "@icon-space/compiler",
+    "name": "@icon-link/compiler",
     "version": "0.0.0",
     "description": "图标编译工具",
     "main": "index.ts",

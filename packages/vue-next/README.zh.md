@@ -1,6 +1,6 @@
-# IconSpace Icons
+# IconLink Icons
 
-> Vue3 Icons for IconSpace
+> Vue3 Icons for IconLink
 
 ## 介绍
 
@@ -15,7 +15,7 @@
 
 ### 更多图标
 
-请访问[IconSpace](https://icon-space.github.io/doc/), 提供更多便捷的操作：
+请访问[IconLink](https://github.com/levai/IconLink), 提供更多便捷的操作：
 
 -   复制 SVG 源文件
 -   复制 React 图标组件
@@ -28,19 +28,19 @@
 ### 安装
 
 ```
-npm install @icon-space/vue-next --save
+npm install @icon-link/vue-next --save
 ```
 
 ### 引用图标
 
-在组件的上方引用`@icon-space/vue-next`，并在组件的模板函数中使用:
+在组件的上方引用`@icon-link/vue-next`，并在组件的模板函数中使用:
 
 ```vue
 <template>
     <home theme="filled" />
 </template>
 <script>
-import { Home } from '@icon-space/vue-next'
+import { Home } from '@icon-link/vue-next'
 
 export default {
     components: {
@@ -53,7 +53,7 @@ export default {
 如果你不想引用，那么你可以全局安装图标
 
 ```typescript
-import { install } from '@icon-space/vue-next/es/all'
+import { install } from '@icon-link/vue-next/es/all'
 import { createApp } from 'vue'
 
 const app = createApp({})
@@ -69,12 +69,12 @@ app.mount('#app')
 引用预设样式
 
 ```typescript
-import '@icon-space/vue-next/styles/index.css'
+import '@icon-link/vue-next/styles/index.css'
 ```
 
 ### 全局
 
-你可以使用 `@icon-space/vue-next/es/runtime` 中的 `IconProvider`来设置全局配置。
+你可以使用 `@icon-link/vue-next/es/runtime` 中的 `IconProvider`来设置全局配置。
 
 ```html
 <template>
@@ -83,8 +83,8 @@ import '@icon-space/vue-next/styles/index.css'
     </div>
 </template>
 <script lang="ts">
-    import { DEFAULT_ICON_CONFIGS, IconProvider } from '@icon-space/vue-next/es/runtime'
-    import { Home } from '@icon-space/vue-next'
+    import { DEFAULT_ICON_CONFIGS, IconProvider } from '@icon-link/vue-next/es/runtime'
+    import { Home } from '@icon-link/vue-next'
 
     export default {
         name: 'App',
@@ -110,7 +110,7 @@ import '@icon-space/vue-next/styles/index.css'
         [
             "import",
             {
-                "libraryName": "@icon-space/vue-next",
+                "libraryName": "@icon-link/vue-next",
                 "libraryDirectory": "es/icons",
                 "camel2DashComponentName": false
             }
@@ -132,17 +132,17 @@ import '@icon-space/vue-next/styles/index.css'
     <icon-space type="add-text" theme="filled" />
 </template>
 <script>
-import { IconSpace } from '@icon-space/vue-next/es/all'
+import { IconLink } from '@icon-link/vue-next/es/all'
 
 export default {
     components: {
-        IconSpace
+        IconLink
     }
 }
 </script>
 ```
 
-### 将 IconSpace 嵌入到你的项目中
+### 将 IconLink 嵌入到你的项目中
 
 如果你的项目中需要使用到图标名称，作者，分类，标签以及创建时间等额外的信息，你可以使用位于每个 NPM 根目录的`icons.json`文件。
 

@@ -2,7 +2,7 @@
  * @file build-code
  */
 
-import { IconCompiler, IIconToolsOptions } from '@icon-space/compiler'
+import { IconCompiler, IIconToolsOptions } from '@icon-link/compiler'
 import fs from 'fs'
 import p from 'path'
 import { mkdirp } from 'mkdirp'
@@ -12,7 +12,7 @@ import iconsConfig from '../source/icons-config.json'
 const iconsJson = JSON.stringify(iconsConfig, null, 4)
 
 export const BUILD_CONFIG: Omit<IIconToolsOptions, 'type'> = {
-    author: 'IconSpace',
+    author: 'IconLink',
     useType: true,
     fixedSize: true,
     stroke: 4,

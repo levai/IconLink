@@ -3,7 +3,7 @@
 # 发布版本
 function pub(){
     # 获取项目名
-    package="@icon-space/$1"
+    package="@icon-link/$1"
     # 获取项目package.json文件
     path="./packages/$1/package.json"
     # 获取项目版本号

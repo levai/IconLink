@@ -1,6 +1,6 @@
-# IconSpace Icons
+# IconLink Icons
 
-> React Icons for IconSpace
+> React Icons for IconLink
 
 ## Introduction
 
@@ -15,7 +15,7 @@
 
 ### More
 
-Please visit [IconSpace](https://icon-space.github.io/doc/)
+Please visit [IconLink](https://icon-space.github.io/doc/)
 
 -   Copy SVG
 -   Copy React Icon component
@@ -28,15 +28,15 @@ Please visit [IconSpace](https://icon-space.github.io/doc/)
 ### Install
 
 ```
-npm install @icon-space/react --save
+npm install @icon-link/react --save
 ```
 
 ### Include Component
 
-Import an icon from `@icon-space/react`at the top of a component and then use it in the render function:
+Import an icon from `@icon-link/react`at the top of a component and then use it in the render function:
 
 ```
-import {Home} from '@icon-space/react';
+import {Home} from '@icon-link/react';
 
 // examples
 <Home/>
@@ -48,22 +48,22 @@ import {Home} from '@icon-space/react';
 Import the icon style:
 
 ```typescript
-import '@icon-space/react/styles/index.css'
+import '@icon-link/react/styles/index.css'
 ```
 
 Or
 
 ```typescript
-import '@icon-space/react/styles/index.less'
+import '@icon-link/react/styles/index.less'
 ```
 
 ### Global Config
 
-You can use `IconProvider` in `@icon-space/react` to set the default config globally:
+You can use `IconProvider` in `@icon-link/react` to set the default config globally:
 
 ```typescript jsx
-import { IconProvider, DEFAULT_ICON_CONFIGS } from '@icon-space/react'
-import { Home } from '@icon-space/react'
+import { IconProvider, DEFAULT_ICON_CONFIGS } from '@icon-link/react'
+import { Home } from '@icon-link/react'
 
 const IconConfig = { ...DEFAULT_ICON_CONFIGS, prefix: 'icon' }
 
@@ -89,7 +89,7 @@ Set config like this:
         [
             "import",
             {
-                "libraryName": "@icon-space/react",
+                "libraryName": "@icon-link/react",
                 "libraryDirectory": "es/icons",
                 "camel2DashComponentName": false
             }
@@ -106,7 +106,7 @@ However, in some scenarios similar to remote loading menus, direct reference to 
 Usage:
 
 ```typescript jsx
-import Icon, { IconType } from '@icon-space/react/es/all'
+import Icon, { IconType } from '@icon-link/react/es/all'
 import React, { Fragment } from 'react'
 
 export function Demo(props: { type: IconType }): JSX.Element {
@@ -125,7 +125,7 @@ export function Demo(props: { type: IconType }): JSX.Element {
 You can do this when you are not sure whether the `type` property is legal:
 
 ```typescript jsx
-import Icon, { ALL_ICON_KEYS, IconType } from '@icon-space/react/es/all'
+import Icon, { ALL_ICON_KEYS, IconType } from '@icon-link/react/es/all'
 import React, { Fragment } from 'react'
 
 export function Demo(props: { type: IconType }): JSX.Element {
@@ -145,7 +145,7 @@ export function Demo(props: { type: IconType }): JSX.Element {
 }
 ```
 
-### Embed IconSpace in your project
+### Embed IconLink in your project
 
 If you need to use additional information such as icon name, author, category, label and creation time, you can use the `icons.json` file located in the root directory of each NPM.
 

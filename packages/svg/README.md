@@ -1,6 +1,6 @@
-# IconSpace Icons
+# IconLink Icons
 
-> Pure SVG Icons for IconSpace
+> Pure SVG Icons for IconLink
 
 ## Introduction
 
@@ -15,7 +15,7 @@
 
 ### More
 
-Please visit [IconSpace](https://icon-space.github.io/doc/)
+Please visit [IconLink](https://icon-space.github.io/doc/)
 
 -   Copy SVG
 -   Copy React Icon component
@@ -28,15 +28,15 @@ Please visit [IconSpace](https://icon-space.github.io/doc/)
 ### Install
 
 ```
-npm install @icon-space/svg --save
+npm install @icon-link/svg --save
 ```
 
 ### Include Component
 
-Import an icon from `@icon-space/svg` and then call it:
+Import an icon from `@icon-link/svg` and then call it:
 
 ```
-import {Home} from '@icon-space/svg';
+import {Home} from '@icon-link/svg';
 
 // examples
 
@@ -47,10 +47,10 @@ console.log(svg);
 
 ### Global Config
 
-You can use the static methods `setConfig` in `@icon-space/svg` to set the default config globally:
+You can use the static methods `setConfig` in `@icon-link/svg` to set the default config globally:
 
 ```typescript
-import { setConfig } from '@icon-space/svg'
+import { setConfig } from '@icon-link/svg'
 
 setConfig({
     theme: 'outline',
@@ -77,7 +77,7 @@ Set config like this:
         [
             "import",
             {
-                "libraryName": "@icon-space/svg",
+                "libraryName": "@icon-link/svg",
                 "libraryDirectory": "es/icons",
                 "camel2DashComponentName": false
             }
@@ -86,7 +86,7 @@ Set config like this:
 }
 ```
 
-### Embed IconSpace in your project
+### Embed IconLink in your project
 
 If you need to use additional information such as icon name, author, category, label and creation time, you can use the `icons.json` file located in the root directory of each NPM.
 
