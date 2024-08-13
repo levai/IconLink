@@ -1,0 +1,20 @@
+@import "tdesign-vue/dist/reset.css";
+@import "tdesign-vue/es/style/index.css";
+
+a {
+    text-decoration: none;
+}
+:root {
+    --td-brand-color: #287ffe;
+
+    --homeBgColor: #fcfeff;
+    --homeMenuWidth: 222px;
+    --homeMenuColor: #000;
+    --homeMenuHoverColor: var(--td-brand-color);
+    --homeSpace: 80px;
+    --activeColor: var(--td-brand-color);
+    --borderColor: rgba(0, 0, 0, 0.05);
+    --text-color-primary: rgba(0, 0, 0, 0.9);
+    --text-color-secondary: rgba(0, 0, 0, 0.6);
+    --text-color-placeholder: rgba(0, 0, 0, 0.4);
+}
