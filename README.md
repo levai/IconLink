@@ -4,7 +4,7 @@ This project is derived from [iconpark](https://github.com/bytedance/iconpark), 
 
 English | [简体中文](README.zh.md)
 
-visit [IconLink](https://icon-space.github.io/doc/)
+visit [IconLink](https://github.com/levai/IconLink.git)
 
 
 ### Packages

@@ -15,7 +15,7 @@
 
 ### More
 
-Please visit [IconLink](https://icon-space.github.io/doc/)
+Please visit [IconLink](https://github.com/levai/IconLink.git)
 
 -   Copy SVG
 -   Copy React Icon component
